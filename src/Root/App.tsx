@@ -18,7 +18,7 @@ const App = () => {
         <Route
           render={() => (
             <div>
-              <h1>Development Travis</h1>
+              <h1>Production Travis</h1>
             </div>
           )}
         />
