@@ -14,11 +14,11 @@ script:
   - npm run test
 
 before_deploy:
-  - cd client && npm run build && cd ..
+  - npm run build
 
 deploy:
   - provider: gae
-    project: tekktekk-notes
+    project: lionel-tay
     keyfile: ./keys/travis-service-account.json
     config: "dispatch.yaml"
     verbosity: debug
@@ -26,7 +26,7 @@ deploy:
     on: master
 
   - provider: gae
-    project: tekktekk-notes
+    project: lionel-tay
     keyfile: ./keys/travis-service-account.json
     config: "./client/prod.yaml"
     verbosity: debug
@@ -34,7 +34,7 @@ deploy:
     on: master
 
   - provider: gae
-    project: tekktekk-notes
+    project: lionel-tay
     keyfile: ./keys/travis-service-account.json
     config: "./server/prod.yaml"
     verbosity: debug
@@ -42,7 +42,7 @@ deploy:
     on: master
 
   - provider: gae
-    project: tekktekk-notes
+    project: lionel-tay
     keyfile: ./keys/travis-service-account.json
     config: "dispatch.yaml"
     verbosity: debug
@@ -50,7 +50,7 @@ deploy:
     on: dev
 
   - provider: gae
-    project: tekktekk-notes
+    project: lionel-tay
     keyfile: ./keys/travis-service-account.json
     config: "./client/dev.yaml"
     verbosity: debug
@@ -58,7 +58,7 @@ deploy:
     on: dev
 
   - provider: gae
-    project: tekktekk-notes
+    project: lionel-tay
     keyfile: ./keys/travis-service-account.json
     config: "./server/dev.yaml"
     verbosity: debug
