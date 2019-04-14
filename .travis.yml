@@ -28,15 +28,7 @@ deploy:
   - provider: gae
     project: lionel-tay
     keyfile: ./keys/travis-service-account.json
-    config: "./client/prod.yaml"
-    verbosity: debug
-    skip_cleanup: true
-    on: master
-
-  - provider: gae
-    project: lionel-tay
-    keyfile: ./keys/travis-service-account.json
-    config: "./server/prod.yaml"
+    config: "./prod.yaml"
     verbosity: debug
     skip_cleanup: true
     on: master
@@ -52,15 +44,7 @@ deploy:
   - provider: gae
     project: lionel-tay
     keyfile: ./keys/travis-service-account.json
-    config: "./client/dev.yaml"
-    verbosity: debug
-    skip_cleanup: true
-    on: dev
-
-  - provider: gae
-    project: lionel-tay
-    keyfile: ./keys/travis-service-account.json
-    config: "./server/dev.yaml"
+    config: "./dev.yaml"
     verbosity: debug
     skip_cleanup: true
     on: dev
