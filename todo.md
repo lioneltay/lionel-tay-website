@@ -1,14 +1,12 @@
-
 - [x] setup google app engine deployment
   - [x] lioneltay.com
 
+* [x] setup prod and dev domains
 
-- [x] setup prod and dev domains
+* [ ] setup travis
 
-- [ ] setup travis
+  - [ ] setup project permission file for GCP (seems like the one we copied from tekktekk-notes is not valid for lionel-tay)
   - [ ] dev deploy
   - [ ] master deploy
 
-- [ ] Remove @tekktekk/react-media-query dependency, just copy the module over.
-
-- [ ] Decide on a new blog design
+* [ ] Decide on a new blog design
