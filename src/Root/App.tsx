@@ -6,6 +6,7 @@ import { GlobalStyles } from "services/theme"
 import { Switch, Route } from "react-router-dom"
 
 import { Page as SandboxPage } from "features/sandbox"
+import { Page as BlogPage } from "features/blog"
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
 
       <Switch>
         <Route path="/sandbox" component={SandboxPage} />
+        <Route path="/blog" component={BlogPage} />
 
         <Route
           render={() => (
