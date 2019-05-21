@@ -8,12 +8,13 @@ import size from "./size"
 import spacing from "./spacing"
 import text from "./text"
 import widgets from "./widgets"
+import design from "./design"
 
 export default createGlobalStyle`
   * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
   }
 
@@ -36,4 +37,5 @@ export default createGlobalStyle`
   ${spacing}
   ${text}
   ${widgets}
+  ${design}
 `
