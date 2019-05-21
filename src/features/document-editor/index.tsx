@@ -110,7 +110,7 @@ export const Page = ({ history, match }: Props) => {
 
           <Button onClick={() => persistDocument(content)}>Save</Button>
           {document ? (
-            <Button onClick={() => deleteDocument(documentId)}>Delete</Button>
+            <Button onClick={() => deleteDocument(document.id)}>Delete</Button>
           ) : null}
         </div>
 
