@@ -11,11 +11,6 @@ const babel_loader = {
   },
 }
 
-const ts_loader = {
-  loader: "ts-loader",
-  options: { transpileOnly: true },
-}
-
 module.exports = {
   entry: {
     main: ["@babel/polyfill", relativeToRoot("./src/index.tsx")],
@@ -34,9 +29,9 @@ module.exports = {
         use: "raw-loader",
       },
       {
-        test: /\.tsx?$/,
+        test: /\.(t|j)sx?$/,
         exclude: /node_modules/,
-        use: [babel_loader, ts_loader],
+        use: [babel_loader],
       },
     ],
   },

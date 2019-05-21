@@ -1,7 +1,7 @@
+/// <reference types="styled-components/cssprop" />
+
 import React from "react"
 import { render } from "react-dom"
-
-import {} from "styled-components/cssprop"
 
 import App from "./App"
 import { BrowserRouter } from "react-router-dom"
@@ -19,10 +19,12 @@ const generateClassName = createGenerateClassName()
 
 export default () => {
   return (
-    <BrowserRouter>
-      <JssProvider jss={jss} generateClassName={generateClassName}>
-        <App />
-      </JssProvider>
-    </BrowserRouter>
+    <div css={``}>
+      <BrowserRouter>
+        <JssProvider jss={jss} generateClassName={generateClassName}>
+          <App />
+        </JssProvider>
+      </BrowserRouter>
+    </div>
   )
 }

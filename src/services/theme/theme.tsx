@@ -1,4 +1,4 @@
-// import React from "react"
+import React from "react"
 // import baseStyled, { ThemedStyledInterface } from "styled-components"
 // import { ThemeProvider as SCThemeProvider } from "styled-components"
 // import red from "@material-ui/core/colors/red"

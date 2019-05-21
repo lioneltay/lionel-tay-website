@@ -5,13 +5,6 @@
 
 * [x] setup prod and dev domains
 
-## Blog
-
-- [ ] Setting up a GAE project
-- [ ] Setting up custom domain
-- [ ] deploying
-- [ ] setting up different services dev / master
-
 # Milestone 2 - Setting up CI with TravisCI
 
 - [x] setup travis
@@ -20,30 +13,36 @@
   - [x] dev deploy
   - [x] master deploy
 
-## Blog
-
-- [ ] Setting up Travis
-  - [ ] Connecting to github
-  - [ ] Creating GCP service account with correct access privileges
-  - [ ]
-
 # Milestone 3 - Setting up Syntax Highlighting and Markdown
 
 - [x] Get react-markdown working
 - [x] Get syntax highlighting working
 - [x] Get webpack markdown imports working
-- [ ] Setup basic styles
-  - [ ] font
-  - [ ] layout (one column)
+- [x] Setup basic styles
+  - [x] font
+  - [x] layout (one column)
 
-## Blog
+# Milestone 4 - Simple Web IDE + Preview for writing posts
 
-- [ ] Setting up react-syntax-highlighter
-- [ ] Setting up react-markdown
-- [ ] Setting up webpack to support importing md
+- [x] Editor page with preview
+  - [x] Use ACE IDE
+    - https://github.com/securingsincity/react-ace
+    - https://ourcodeworld.com/articles/read/562/how-to-use-properly-ace-editor-in-reactjs
+  - [x] Support custom options (VIM)
+- [x] Prettier formatting
 
-# Milestone 4 - Saving blog posts on firebase
-- [ ] Create a firebase instance
+# Milestone 5 - Saving notes posts on firebase
+
+- [x] Create a firebase instance
+- [ ] Split screen editor (resizeable)
+- [ ] Have a look at code sandbox example
 
 - [ ] Decide on a new blog design
   - simple 1 column design (like dan abramov's)
+
+
+# Future
+
+- Google Drive for developer notes?
+  - Folders
+  - Live markdown editor

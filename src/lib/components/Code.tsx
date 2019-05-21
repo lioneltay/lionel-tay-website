@@ -1,4 +1,5 @@
-import React, { FunctionComponent } from "react"
+import React from "react"
+import { noopTemplate as css } from "lib/utils"
 import { Prism, PrismProps } from "react-syntax-highlighter"
 import { tomorrow } from "react-syntax-highlighter/dist/styles/prism"
 
@@ -174,9 +175,17 @@ export default ({
   children,
 }: Props) => {
   return (
-    <Prism style={theme} language={language || "tsx"}>
-      {value || source || children || ""}
-    </Prism>
+    <div
+      css={css`
+        & * {
+          font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+        }
+      `}
+    >
+      <Prism style={theme} language={language || "tsx"}>
+        {value || source || children || ""}
+      </Prism>
+    </div>
   )
 }
 
